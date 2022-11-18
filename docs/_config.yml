@@ -1,0 +1,6 @@
+title: Bundles Custom Applications
+description: Create and manage bundles on the commercetools platform.
+remote_theme: pmarsceill/just-the-docs
+aux_links:
+  "Bundles on GitHub":
+    - "//github.com/commercetools/mc-custom-app-bundles"

@@ -1,0 +1,38 @@
+{
+  "name": "mc-custom-app-bundles",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "packages/*"
+    ]
+  },
+  "repository": {
+    "url": "https://github.com/commercetools/mc-custom-applications-gallery"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lerna run --concurrency 1 --stream precommit",
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "7.20.2",
+    "@babel/plugin-transform-runtime": "7.19.6",
+    "@babel/runtime": "7.20.1",
+    "@babel/runtime-corejs3": "7.20.1",
+    "@commitlint/cli": "17.2.0",
+    "@commitlint/config-conventional": "17.2.0",
+    "husky": "7.0.4",
+    "install-peers": "1.0.4",
+    "jscodeshift": "0.14.0",
+    "lerna": "4.0.0",
+    "yarn": "1.22.19"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.15.0"
+  }
+}
